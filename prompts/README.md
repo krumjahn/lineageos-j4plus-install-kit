@@ -9,6 +9,32 @@ commands that worked.
 
 ---
 
+## Before you paste this
+
+**These prompts will drive a real phone.** If the agent you paste them into has
+shell access to a Mac with a phone plugged in, it can flash partitions, format
+storage, and reboot the device. That is the point of them, and it is also the risk.
+
+Three things to do first:
+
+1. **Read the phone's screen yourself, every time the prompt asks you to.** The
+   agent cannot see it. A prompt that says *"stop and ask me for a photo of the
+   Odin screen"* is a checkpoint, not a formality — skip it and the agent is
+   reasoning from a log that may not reflect the device.
+2. **Do not paste the task prompts into an agent that also has the phone
+   connected and unattended.** The prompts ask for confirmation before
+   irreversible steps, but a confirmation is only worth something if a human
+   is there to give it.
+3. **Start with [`agent-brief.md`](agent-brief.md) alone.** It carries the device
+   facts and the safety rules and asks for nothing. Read what it says, then
+   decide whether you want the agent driving a device at all.
+
+The agent brief also states the rule that matters most: **never let the phone
+boot back into stock Android.** A stock boot can restore stock recovery and
+re-lock the bootloader, undoing the whole procedure.
+
+---
+
 ## How to use them
 
 ### Step 1 — Set the context once
