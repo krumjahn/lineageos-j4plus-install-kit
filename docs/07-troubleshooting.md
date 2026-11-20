@@ -67,7 +67,7 @@ different answers.
 
 | | What it is | What the answer is |
 |---|---|---|
-| **The phone** | The Galaxy J4+ itself. It runs **Samsung's stock Android** — Samsung's own build of Android 8.1, with Knox, Samsung Cloud and the rest. | That is **exactly what LineageOS replaces**. The phone never runs Windows and never needs to. |
+| **The phone** | The Galaxy J4+ itself. It runs **Samsung's stock Android** — Samsung's own build of Android 9 Pie (One UI 8.0), with Knox, Samsung Cloud and the rest. | That is **exactly what LineageOS replaces**. The phone never runs Windows and never needs to. |
 | **Your computer** | The machine you plug the phone into. This kit drives it from **macOS** with `samloader`. | You do **not** need a Windows PC, and you do **not** need Odin or Zadig. `samloader` speaks Samsung's Loke/Odin protocol directly over USB. |
 
 The one place a Windows PC genuinely shows up is the **KG Prenormal** fallback: if

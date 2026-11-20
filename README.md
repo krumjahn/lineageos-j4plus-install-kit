@@ -10,8 +10,8 @@ working phone**, including every failure along the way.
 > **Two different machines are involved, and "no Windows" is about one of them.**
 >
 > - **The phone** runs Samsung's stock Android right now — Samsung's own build of
->   Android 8.1, with Knox, Samsung Cloud and the rest. *That* is what LineageOS
->   replaces.
+>   Android 9 Pie (One UI 8.0), with Knox, Samsung Cloud and the rest. *That* is
+>   what LineageOS replaces.
 > - **Your computer** is what talks to the phone over USB. This kit does it from
 >   macOS with a command-line tool called `samloader`, so you do **not** need a
 >   Windows PC, and you do **not** need Odin or a Samsung account on your PC.

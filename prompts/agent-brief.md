@@ -12,7 +12,7 @@ required.
 Two different machines are involved, and keep them straight:
 
 - **The phone** currently runs **Samsung's stock Android** (Samsung's build of
-  Android 8.1, with Knox). That is the thing being replaced.
+  Android 9 Pie / One UI 8.0, with Knox). That is the thing being replaced.
 - **My computer** is macOS, and it is what talks to the phone over USB. It does not
   need to be Windows and does not need Odin.
 
