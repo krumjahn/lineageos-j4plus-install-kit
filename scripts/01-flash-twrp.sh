@@ -24,6 +24,21 @@ TWRP="$WORK/twrp-3.7.0_j4primelte.img"
 TWRP_SHA256="7dabdee3b26dd5781593690f61a927630d14e3fd61233c2894666029ee518632"
 LOG="$WORK/twrp-flash.log"
 
+# The log is written under WORK. Refuse a relative working directory so the
+# script cannot drop a file somewhere unexpected.
+# (Self-contained: it must run before the helper functions are defined.)
+case "$WORK" in
+  /*) ;;
+  *)
+    printf '\033[31mworking directory must be an absolute path: %s\033[0m\n' "$WORK" >&2
+    exit 1
+    ;;
+esac
+if [ "$WORK" = "/" ]; then
+  printf '\033[31mrefusing to use / as the working directory\033[0m\n' >&2
+  exit 1
+fi
+
 SAMLOADER=""
 for candidate in "$WORK/samloader-longtimeout" "$WORK/samloader"; do
   [ -x "$candidate" ] && { SAMLOADER="$candidate"; break; }

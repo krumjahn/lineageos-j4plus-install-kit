@@ -35,6 +35,20 @@ HOST="https://www.google.com"
 MIN_DAYS=8          # the method wants more than seven
 MAX_DAYS=9          # measured TLS floor when the certificate was checked
 
+# Logs and the UI driver live under WORK. Refuse a relative working directory.
+# (Self-contained: it must run before the helper functions are defined.)
+case "$WORK" in
+  /*) ;;
+  *)
+    printf '\033[31mworking directory must be an absolute path: %s\033[0m\n' "$WORK" >&2
+    exit 1
+    ;;
+esac
+if [ "$WORK" = "/" ]; then
+  printf '\033[31mrefusing to use / as the working directory\033[0m\n' >&2
+  exit 1
+fi
+
 mkdir -p "$LOGDIR"
 
 say()  { printf '\n\033[1m%s\033[0m\n' "$*"; }

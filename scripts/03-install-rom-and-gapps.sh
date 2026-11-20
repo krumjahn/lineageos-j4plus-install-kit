@@ -20,6 +20,21 @@ GAPS="${GAPS:-$WORK/MindTheGapps-12.1.0-arm-20231025_200802.zip}"
 MTG_DIR="${MTG_DIR:-$WORK/mtg}"
 GAPS_SHA_SIZE=228186029
 
+# Everything this script writes lives under WORK, and one step removes a
+# subdirectory of it. Refuse a relative or root working directory.
+# (Self-contained: it must run before the helper functions are defined.)
+case "$WORK" in
+  /*) ;;
+  *)
+    printf '\033[31mworking directory must be an absolute path: %s\033[0m\n' "$WORK" >&2
+    exit 1
+    ;;
+esac
+if [ "$WORK" = "/" ]; then
+  printf '\033[31mrefusing to use / as the working directory\033[0m\n' >&2
+  exit 1
+fi
+
 mkdir -p "$LOGDIR"
 
 say()  { printf '\n\033[1m%s\033[0m\n' "$*"; }
@@ -130,7 +145,14 @@ info "space looks fine"
 say "5. install Google apps"
 
 info "extracting MindTheGapps' update-binary"
-rm -rf "$MTG_DIR"
+if [ -d "$MTG_DIR" ]; then
+  # Clear only the contents of the extraction directory. It must live inside
+  # the working directory, and the working directory itself is never removed.
+  case "$MTG_DIR" in
+    "$WORK"/*) find "$MTG_DIR" -mindepth 1 -delete ;;
+    *) die "MTG_DIR must be inside the working directory: $MTG_DIR" ;;
+  esac
+fi
 mkdir -p "$MTG_DIR"
 unzip -o -j "$GAPS" '*update-binary*' -d "$MTG_DIR" >/dev/null 2>&1 \
   || die "could not extract update-binary from $GAPS"
