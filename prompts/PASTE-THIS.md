@@ -28,6 +28,22 @@ The kit you are working from is this repository. Read these files before you act
 Work from `install.sh` where you can: `./install.sh` drives the whole procedure and
 `./install.sh --status` tells you the current state read-only.
 
+## Scope
+
+This kit applies to a phone **you own**. Flashing your own phone is fine —
+it voids the warranty, trips the Knox bit, and can brick it if done wrong, but
+it is not restricted.
+
+Two things are out of scope, and you should say so if they come up:
+
+- **Clearing an activation lock on a phone the user did not buy.** Clearing
+  FRP because they forgot their own Google account is routine. Clearing it on
+  a cheap carrier-locked phone to resell it is device flipping, and it is a
+  criminal offence in many countries.
+- **Redistributing the binaries.** This repo hosts no firmware, no ROM and no
+  bypass zip. Everything is downloaded from its original source. Link to the
+  unofficial ROM; do not repackage it.
+
 ## Rules you must not break
 
 1. **Never let the phone boot back into stock Android** once TWRP is in `BOOT`.

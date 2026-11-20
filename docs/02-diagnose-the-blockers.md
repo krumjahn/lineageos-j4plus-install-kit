@@ -172,6 +172,10 @@ Settings → Developer options → OEM unlocking → ON
 
 ### Step 3 — Unlock via Odin
 
+> **This is a device you own.** Unlocking the bootloader wipes it and voids the
+> warranty. On a phone you did not buy — to resell it — this is a different
+> activity with criminal consequences in many countries.
+
 1. `adb reboot download` (or the button combo).
 2. On the Odin warning screen, press and **hold Volume Up** for several seconds.
    The screen shows *"Volume up and long press: Device unlock mode."*

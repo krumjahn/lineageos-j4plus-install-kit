@@ -84,6 +84,32 @@ You need four things. Full details and download URLs in
 
 ---
 
+## Scope — a device you own
+
+Everything here applies to a phone **you own**. That is the line, and it is the
+only line.
+
+Flashing your own phone is what this project documents. It voids your Samsung
+warranty, permanently trips the Knox warranty bit, and can brick the device if
+you get it wrong. Samsung's response to non-Samsung firmware is **technical** —
+the KG lockout, the Knox bit, the warranty — not legal. Nothing in this kit is
+restricted, and the enforcement to date has been a lockout, not a court.
+
+Two things this kit deliberately does **not** cover, because they are different
+activities with different consequences:
+
+- **Clearing an activation lock on a phone you did not buy.** Clearing FRP on
+  your own phone because you forgot the Google account is routine. Clearing it
+  on a cheap carrier-locked phone in order to resell it is device flipping, and
+  that is prosecuted.
+- **Redistributing the binaries.** This repo hosts no firmware, no ROM and no
+  bypass zip — `.gitignore` excludes `*.img` and `*.zip`, and every file is
+  fetched from its original source (TWRP, GitHub releases, Samsung's own
+  servers). The unofficial ROM is somebody else's build: link to it, do not
+  repackage it.
+
+---
+
 ## The three things that go wrong
 
 Almost everyone hits these. The full catalogue is
@@ -200,7 +226,8 @@ in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 Flashing a phone voids its warranty in most jurisdictions, can destroy data, and
 can permanently brick the device if the procedure is followed incorrectly. Keith
 Rumjahn is not responsible for damage to devices, data, or warranty. Everything
-here was performed on hardware the author owns, at their own risk.
+here was performed on hardware the author owns, at their own risk. This kit is
+for devices you own — see the Scope section above.
 
 This project is independent and unaffiliated with Samsung, LineageOS, Team Win,
 MindTheGapps and LineageOSOS.

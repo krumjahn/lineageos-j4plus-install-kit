@@ -504,6 +504,11 @@ carrying an encryption state TWRP could not clear.
    **`persistent`** partition. Note it is **not** present on the `lineage-19.1`
    branch, so you must push it manually.
 
+   > Only do this on a phone **you own**. Clearing FRP on a device you did not
+   > buy — to resell it, for instance — is device flipping, and it is a criminal
+   > offence in many countries. Forgotten-account-on-your-own-phone is the case
+   > this applies to.
+
 ---
 
 <a id="q24"></a>

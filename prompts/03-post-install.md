@@ -89,6 +89,12 @@ is the reason.**
 
 ## Task B — Clear FRP
 
+> **Scope gate.** Only do this on a phone the user owns. If the user says they
+> bought it cheap to resell, or that it is not theirs, stop — clearing an
+> activation lock on a device you did not buy is device flipping and is a
+> criminal offence in many countries. Ask once, plainly, if it is not already
+> clear.
+
 ### B1 — Is it actually FRP?
 
 `FRP LOCK: ON` on the Odin screen, or a setup wizard demanding a Google account, or

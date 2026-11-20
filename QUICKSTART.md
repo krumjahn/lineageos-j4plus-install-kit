@@ -14,6 +14,8 @@ Read this page, find the branch that matches your phone, and go to that document
 ## Before anything else
 
 - [ ] This phone will be **erased**. Back it up.
+- [ ] This is **your** phone — you own it, and you are not doing this in order
+      to resell it. (See "Scope" in the README for why that matters.)
 - [ ] The phone is running **Samsung's stock Android** — that is what LineageOS replaces.
 - [ ] Your **flashing computer** is macOS (Linux works too; `samloader` also has a
       Windows build). If you only have a Windows PC, the official Odin guide is

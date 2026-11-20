@@ -21,6 +21,25 @@ and rules that exist because ignoring them cost hours.
 
 ---
 
+## 0. Scope
+
+This kit applies to a phone **the user owns**. Flashing your own phone is
+fine — it voids the warranty, trips the Knox bit, and can brick it if done
+wrong, but it is not restricted.
+
+Two things are out of scope. If either comes up, say so plainly rather than
+proceeding:
+
+- **Clearing an activation lock on a phone the user did not buy.** Clearing
+  FRP because they forgot their own Google account is routine. Clearing it on
+  a cheap carrier-locked phone in order to resell it is device flipping, and
+  it is a criminal offence in many countries.
+- **Redistributing the binaries.** This kit hosts no firmware, no ROM and no
+  bypass zip — everything is downloaded from its original source. Link to the
+  unofficial ROM; do not repackage it.
+
+---
+
 ## 1. Hard safety rules
 
 1. **Never let the phone boot back into stock Android** once TWRP is installed in

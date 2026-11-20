@@ -215,6 +215,11 @@ the ROM finishes.
 If the Odin screen showed `FRP LOCK: ON`, or the setup wizard asks for a Google account
 you do not have:
 
+> **This is for a phone you own.** Clearing the activation lock on your own device
+> because you forgot the account is routine. Clearing it on a phone you did not buy,
+> in order to resell it, is a different activity — and a criminal one in many
+> countries. Do not use this section for that.
+
 ```bash
 # the official LineageOS script
 adb push wipe-frp.sh /data/local/tmp/wipe-frp.sh
