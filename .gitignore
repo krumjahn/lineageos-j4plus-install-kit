@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Credentials - never commit these
+config.json
+config-*.json
+!config.example.json
+*.jks
+*.keystore
+keystore.properties
+
+# Downloaded binaries and images (large, and re-downloadable)
+*.img
+*.zip
+*.jar
+device.pit
+firmware/
+work/
+logs/
+*.log
