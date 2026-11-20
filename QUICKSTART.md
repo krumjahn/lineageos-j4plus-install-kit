@@ -14,7 +14,10 @@ Read this page, find the branch that matches your phone, and go to that document
 ## Before anything else
 
 - [ ] This phone will be **erased**. Back it up.
-- [ ] You are on **macOS**. If you have Windows, the official Odin guide is easier.
+- [ ] The phone is running **Samsung's stock Android** — that is what LineageOS replaces.
+- [ ] Your **flashing computer** is macOS (Linux works too; `samloader` also has a
+      Windows build). If you only have a Windows PC, the official Odin guide is
+      easier for you — this kit exists because it was written on a Mac.
 - [ ] You have the device in front of you and can press three buttons and reach the
       USB cable.
 - [ ] You have ~2 hours of uninterrupted time for the first attempt. The full session

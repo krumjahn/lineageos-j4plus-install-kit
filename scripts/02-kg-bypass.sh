@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 #
 # 02-kg-bypass.sh - clear Samsung KG State: Prenormal without a SIM, without a
-# Google account, and without Windows.
+# Google account, and without a Windows PC.
+#
+#   The phone stays on Samsung's stock Android for this step - it has to reach
+#   Samsung's update server. The COMPUTER you run this from does not have to be
+#   Windows, and does not have to run Odin.
 #
 #   bash 02-kg-bypass.sh [working-dir]
 #

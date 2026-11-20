@@ -6,8 +6,15 @@
 ---
 
 You are helping me flash a **Samsung Galaxy J4+** onto **LineageOS 19.1 (Android 12L)**
-from **macOS on Apple Silicon**, using **`samloader`** — no Odin, no Windows, no virtual
-machine.
+from **macOS on Apple Silicon**, using **`samloader`** — no Odin, and no Windows PC
+required.
+
+Two different machines are involved, and keep them straight:
+
+- **The phone** currently runs **Samsung's stock Android** (Samsung's build of
+  Android 8.1, with Knox). That is the thing being replaced.
+- **My computer** is macOS, and it is what talks to the phone over USB. It does not
+  need to be Windows and does not need Odin.
 
 Read everything below before you act. It contains facts I have verified on this device
 and rules that exist because ignoring them cost hours.

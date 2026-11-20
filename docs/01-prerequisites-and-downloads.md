@@ -224,9 +224,11 @@ not what Samsung's bootloader speaks on this device. **`samloader` (samloader‑
 because it implements Samsung's Loke/Odin protocol directly.
 
 It is also available as a **prebuilt binary for macOS, Linux and Windows** on the
-[releases page](https://github.com/topjohnwu/samloader-rs/releases) — and on Windows the
-default USB backend is VCOM, so **no Odin and no Zadig driver swap are needed on any
-operating system**. If you only need the flasher, the prebuilt binary is the fast path.
+[releases page](https://github.com/topjohnwu/samloader-rs/releases) — and on the
+Windows build the default USB backend is VCOM, so **no Odin and no Zadig driver swap
+are needed on any operating system**. (That is a statement about your *computer*; the
+phone itself is running Samsung's stock Android and always has been.) If you only need
+the flasher, the prebuilt binary is the fast path.
 
 ```bash
 git clone https://github.com/topjohnwu/samloader-rs

@@ -4,10 +4,11 @@ Thanks for looking at this. Pull requests are welcome.
 
 ## What this repo is
 
-A set of notes and helper scripts for installing **LineageOS 19.1 on a Samsung
-Galaxy J4+** (`j4primelte`, SM‑J415F / SM‑J415GN) from macOS using
-[`samloader`](https://github.com/topjohnwu/samloader-rs), without Odin and without
-Windows.
+A set of notes and helper scripts for replacing **Samsung's stock Android** on a
+Samsung Galaxy J4+ (`j4primelte`, SM‑J415F / SM‑J415GN) with **LineageOS 19.1**,
+flashed from macOS using
+[`samloader`](https://github.com/topjohnwu/samloader-rs) — no Odin, and no Windows PC
+required.
 
 It was written by documenting a real 49-hour installation, including every failure.
 If you have flashed a similar device and found something this repo gets wrong,

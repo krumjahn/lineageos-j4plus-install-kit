@@ -1,11 +1,30 @@
 # LineageOS 19.1 on the Samsung Galaxy J4+
 
-Install LineageOS on a 2018 Galaxy J4+ (`SM‑J415F` / `SM‑J415GN`, codename
-`j4primelte`) **from macOS**, using `samloader`. No Odin, no Windows, no virtual
-machine.
+Replace **Samsung's stock Android** on a 2018 Galaxy J4+ (`SM‑J415F` /
+`SM‑J415GN`, codename `j4primelte`) with **LineageOS 19.1** — flashed from your
+**Mac** with `samloader`.
 
 Verified on real hardware — **13 November 2026, 49 hours from first attempt to a
 working phone**, including every failure along the way.
+
+> **Two different machines are involved, and "no Windows" is about one of them.**
+>
+> - **The phone** runs Samsung's stock Android right now — Samsung's own build of
+>   Android 8.1, with Knox, Samsung Cloud and the rest. *That* is what LineageOS
+>   replaces.
+> - **Your computer** is what talks to the phone over USB. This kit does it from
+>   macOS with a command-line tool called `samloader`, so you do **not** need a
+>   Windows PC, and you do **not** need Odin or a Samsung account on your PC.
+>
+> If you do have a Windows PC, `samloader` ships a Windows build and needs no Odin
+> and no Zadig driver there either — see [`docs/01`](docs/01-prerequisites-and-downloads.md).
+> Nothing here requires Windows; this kit simply was never run on one.
+>
+> One more piece of vocabulary, because it trips people up constantly: **"the
+> Odin screen" is on the phone.** In download mode the J4+ shows a white
+> diagnostic screen (`OEM LOCK:`, `KG STATUS:`, …). That is what this kit means by
+> the Odin screen, and it is not the Odin *software* — a Windows-only tool you do
+> not need.
 
 ---
 
@@ -56,9 +75,9 @@ You need four things. Full details and download URLs in
 
 | | |
 |---|---|
-| **A Galaxy J4+** | `SM‑J415F` / `SM‑J415FM` / `SM‑J415DS` / `SM‑J415GN`. Nothing else — the partition map and the recovery quirks are device-specific. |
-| **A Mac** | macOS on Apple Silicon (Intel works too). `brew install android-platform-tools` |
-| **samloader** | The flasher. A prebuilt binary from [the releases page](https://github.com/topjohnwu/samloader-rs) works on macOS, Linux and Windows. On Windows it needs **no Odin and no Zadig**. |
+| **A Galaxy J4+** | `SM‑J415F` / `SM‑J415FM` / `SM‑J415DS` / `SM‑J415GN`. Nothing else — the partition map and the recovery quirks are device-specific. Ships with Samsung's stock Android, which is what gets replaced. |
+| **A Mac** | macOS on Apple Silicon (Intel works too) — this is the computer you flash *from*. `brew install android-platform-tools` |
+| **samloader** | The flasher. A prebuilt binary from [the releases page](https://github.com/topjohnwu/samloader-rs) works on macOS, Linux and Windows. On the Windows build it needs **no Odin and no Zadig** either. |
 | **Three files** | `twrp-3.7.0_j4primelte.img`, a LineageOS 19.1 ROM, `MindTheGapps-12.1.0-arm-20231025_200802.zip` |
 
 **Everything gets wiped.** Back up first. Do not start on the only phone you own.

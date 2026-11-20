@@ -97,6 +97,13 @@ ioreg -p IOUSB -w0 2>/dev/null | grep -oE "(MSM8953|SAMSUNG_Android)@[0-9a-f]+[[
 Take a photo of the Odin screen. This is the single most valuable piece of
 information in the whole procedure, and reading it correctly saves hours.
 
+> **"The Odin screen" is on the phone, not on your computer.** When a Samsung
+> device is in download mode it shows a white diagnostic screen — that is what
+> this document means by the Odin screen. It is *not* the Odin software, which is
+> a Windows-only tool you do not need and do not have to install. This kit reads
+> the same information over USB with `samloader`, and you photograph the phone's
+> own screen.
+
 A verified reading from this device:
 
 ```

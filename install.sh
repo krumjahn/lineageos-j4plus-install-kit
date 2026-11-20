@@ -407,7 +407,8 @@ main() {
   esac
 
   printf "%sLineageOS 19.1 - Samsung Galaxy J4+ (j4primelte)%s\n" "$C_HEAD" "$C_OFF"
-  printf "macOS + samloader. No Odin, no Windows.\n\n"
+  printf "macOS + samloader. No Odin, no Windows PC.\n"
+  printf "The phone currently runs Samsung's stock Android; that is what gets replaced.\n\n"
 
   stage_preflight
   stage_check_odin

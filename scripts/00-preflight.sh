@@ -27,7 +27,7 @@ echo "== host =="
 case "$(uname -s)" in
   Darwin) pass "macOS $(sw_vers -productVersion) ($(uname -m))" ;;
   Linux)  pass "Linux $(uname -r) ($(uname -m))" ;;
-  *)      warn "$(uname -s) is not macOS or Linux - samloader has Windows builds too" ;;
+  *)      warn "$(uname -s) is not macOS or Linux - samloader has a Windows build for your computer too" ;;
 esac
 
 echo

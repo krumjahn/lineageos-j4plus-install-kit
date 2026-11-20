@@ -12,6 +12,10 @@ adb shell getprop ro.build.version.release   # if adb is up
 cat ~/Desktop/j4-flash/logs/*.log             # whatever you have already logged
 ```
 
+> Not sure whether you need a Windows PC? The phone runs Samsung's stock Android
+> and your computer is the one that talks to it — [Q30](#q30) spells out which is
+> which.
+
 ---
 
 ## Symptom index
@@ -49,6 +53,32 @@ cat ~/Desktop/j4-flash/logs/*.log             # whatever you have already logged
 | `dm-verity` / bootloop right after install | [Q27](#q27) |
 | I need to start completely over | [Q28](#q28) |
 | I am not sure which stage I am at | [Q29](#q29) |
+| "Do I need Windows?" / "Is the phone running Windows?" | [Q30](#q30) |
+
+---
+
+## Before you start
+
+<a id="q30"></a>
+### Q30. Do I need Windows? Is the phone running Windows?
+
+**A:** Two different machines are involved, and the questions about them have
+different answers.
+
+| | What it is | What the answer is |
+|---|---|---|
+| **The phone** | The Galaxy J4+ itself. It runs **Samsung's stock Android** — Samsung's own build of Android 8.1, with Knox, Samsung Cloud and the rest. | That is **exactly what LineageOS replaces**. The phone never runs Windows and never needs to. |
+| **Your computer** | The machine you plug the phone into. This kit drives it from **macOS** with `samloader`. | You do **not** need a Windows PC, and you do **not** need Odin or Zadig. `samloader` speaks Samsung's Loke/Odin protocol directly over USB. |
+
+The one place a Windows PC genuinely shows up is the **KG Prenormal** fallback: if
+the free clock-backdating method does not clear the KG gate, the alternatives are the
+paid Windows tools (ChimeraTool, HydraTool) or the 7-day wait. That is a fork in the
+road, not a requirement — see [`03-kg-prenormal-bypass.md`](03-kg-prenormal-bypass.md).
+
+> `samloader` does ship a **Windows build**, and on it the default USB backend is
+> VCOM, so it needs no Odin and no driver swap there either. If your computer is
+> Windows, the official Odin guide may still be the shorter path for you — this kit
+> exists because it was written on a Mac.
 
 ---
 

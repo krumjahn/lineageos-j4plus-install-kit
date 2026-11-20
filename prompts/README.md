@@ -120,12 +120,16 @@ confidently walks your phone into a brick.
 
 ## Customising
 
-These prompts assume macOS on Apple Silicon and `samloader`. If you are on Windows,
-`samloader` has official Windows builds and **does not need Odin** (the default USB
-backend is VCOM, so no Zadig driver swap) — say so in the prompt and the agent will
-adjust.
+These prompts assume macOS on Apple Silicon and `samloader`. That assumption is about
+**your computer** — the machine that talks to the phone over USB — and not about what
+the phone runs (the phone is on Samsung's stock Android, and that is what gets
+replaced).
 
-If you are on Linux, the same applies.
+If your computer is Windows, `samloader` has official Windows builds and **does not
+need Odin** (the default USB backend is VCOM, so no Zadig driver swap) — say so in
+the prompt and the agent will adjust.
+
+If your computer is Linux, the same applies.
 
 If you are working on a **different device**, say which one and discard the
 device-specific sections. The *structure* of the prompts — diagnose before acting,

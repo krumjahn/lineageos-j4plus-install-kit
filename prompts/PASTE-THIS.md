@@ -10,7 +10,14 @@
 
 You are helping me install **LineageOS 19.1** on a **Samsung Galaxy J4+**
 (`SM‑J415GN`, codename `j4primelte`, Snapdragon 425, 32‑bit ARM) from **macOS on
-Apple Silicon**, using **`samloader`**. No Odin, no Windows.
+Apple Silicon**, using **`samloader`**.
+
+Keep two things straight — they are often confused:
+
+- **The phone** currently runs **Samsung's stock Android** (Samsung's build of
+  Android 8.1, with Knox). That is what LineageOS replaces.
+- **My computer** is macOS, and it is what talks to the phone over USB. It does not
+  need to be Windows and does not need Odin.
 
 The kit you are working from is this repository. Read these files before you act:
 

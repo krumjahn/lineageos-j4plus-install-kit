@@ -232,9 +232,9 @@ Then flash TWRP.
   in with Samsung's servers** for the duration. This is tied to the device's
   unlock/setup-wizard state, not to a simple uptime counter, so a phone left powered
   on but offline will not clear it. Keep it on Wi‑Fi, powered on, and online. Costs a
-  week of wall-clock time, but no money and no Windows.
-- **ChimeraTool / HydraTool** on Windows. Costs money and a Windows machine, but it is
-  fast and it does not depend on a TLS window.
+  week of wall-clock time, but no money and no Windows PC.
+- **ChimeraTool / HydraTool** on a Windows computer. Costs money and a Windows
+  machine, but it is fast and it does not depend on a TLS window.
 - **RMM bypass zip from TWRP** — circular while KG is closed, because you need TWRP
   to flash the zip and you cannot flash TWRP while KG is closed. It was used in the
   original session as a later belt‑and‑braces step, not as the primary unlock.
