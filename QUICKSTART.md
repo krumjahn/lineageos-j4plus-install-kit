@@ -1,5 +1,12 @@
 # QUICKSTART — find your path
 
+> **In a hurry?** Just run `./install.sh`. It drives the whole procedure, stops and
+> asks at the three points that need a human, and resumes where it left off if
+> anything goes wrong. This page is for when you want to understand the path
+> first, or when something has already broken.
+>
+> Not sure where you are? `./install.sh --status` prints a read-only report.
+
 Read this page, find the branch that matches your phone, and go to that document.
 
 ---

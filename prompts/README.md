@@ -9,6 +9,33 @@ commands that worked.
 
 ---
 
+## Start here
+
+### [`PASTE-THIS.md`](PASTE-THIS.md) — the one you want
+
+A single prompt that drives the whole install. It carries the device facts, the
+protocol rules, the safety rules and the load-bearing quirks (BOOT vs RECOVERY, the
+capacitive home key, 32-bit ARM, no vbmeta, sideload being broken, the recovery
+loop's real cause), and it tells the agent to stop and ask you before anything
+irreversible.
+
+Copy it into your agent and go.
+
+### Otherwise
+
+| Your situation | Use |
+|---|---|
+| You want the facts and rules, no task | [`agent-brief.md`](agent-brief.md) |
+| Starting from scratch, phone on stock Android | [`01-flash-from-scratch.md`](01-flash-from-scratch.md) |
+| Something failed and you do not know why | [`02-when-stuck.md`](02-when-stuck.md) |
+| LineageOS is installed; you want Google apps, FRP cleared, or a recovery | [`03-post-install.md`](03-post-install.md) |
+
+`agent-brief.md` is the reference file the task prompts assume you have already
+pasted. It carries the things an agent **cannot** infer. If you only use one file
+from this pack, use that one.
+
+---
+
 ## Before you paste this
 
 **These prompts will drive a real phone.** If the agent you paste them into has
